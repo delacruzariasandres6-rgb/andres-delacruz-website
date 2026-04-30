@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revista Digital - Física</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-container">
+    <div class="logo">REVISTA DIGITAL</div>
+    <ul class="nav-menu">
+      <li><a href="#inicio">INICIO</a></li>
+      <li><a href="#proyectos">PROYECTOS</a></li>
+      <li><a href="#arduino">ARDUINO</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-text">
+    <h1>PROYECTOS DE FÍSICA</h1>
+    <h3>Ingeniería en Software y Sistemas Computacionales</h3>
+
+    <h2>ANDRÉS DE LA CRUZ ARIAS</h2>
+
+    <p>
+      La física es el cimiento del hardware; sin el estudio del electromagnetismo y los semiconductores, 
+      no existirían los microprocesadores que ejecutan el software. En el desarrollo de sistemas, 
+      aporta las leyes necesarias para crear simulaciones realistas, 
+      motores de videojuegos y modelos de inteligencia artificial que replican el comportamiento del mundo físico. 
+      Además, es esencial en la robótica y el Internet de las Cosas (IoT), ya que permite al software interpretar 
+      correctamente los datos de sensores de movimiento, presión o temperatura. Su estudio desarrolla un pensamiento
+      analítico profundo, capacitando al ingeniero para resolver problemas complejos mediante modelos matemáticos
+      y optimizar el consumo energético de los algoritmos. Finalmente, la física cuántica está definiendo la próxima 
+      generación de computación, permitiendo procesar información a velocidades antes imposibles.
+    </p>
+
+    <button onclick="scrollToSection('proyectos')">Explorar proyectos</button>
+  </div>
+
+  <div class="hero-image">
+    <img src="img/Proyecto1.jpeg">
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section class="projects" id="proyectos">
+  <div id="projectsContainer"></div>
+</section>
+
+<!-- ARDUINO -->
+<section class="arduino" id="arduino">
+  <div class="arduino-content">
+
+    <h2>PROYECTO DE ARDUINO</h2>
+    <p>Simulación de un semáforo con Arduino UNO.</p>
+
+    <div class="arduino-grid">
+
+      <div class="arduino-img">
+        <img src="img/arduino-circuito.png" alt="Circuito Arduino">
+      </div>
+
+      <div class="arduino-info">
+        <h3>Funcionamiento del circuito</h3>
+
+        <p>
+          Este proyecto utiliza una placa Arduino UNO conectada a tres LEDs
+          que representan un semáforo (rojo, amarillo y verde).
+        </p>
+
+        <ul>
+          <li>LED Rojo → Pin 13</li>
+          <li>LED Amarillo → Pin 12</li>
+          <li>LED Verde → Pin 11</li>
+        </ul>
+
+        <p>
+          El sistema funciona de manera secuencial utilizando programación en C++,
+          activando cada LED mediante señales digitales.
+        </p>
+
+        <p>
+          Se aplican conceptos de electrónica básica, control de flujo y temporización
+          mediante la función <strong>delay()</strong>.
+        </p>
+
+      </div>
+
+    </div>
+
+    <a href="https://youtube.com/shorts/CnZBpLZ1d90?si=4LY478oMYW8SCcYE" target="_blank">
+      Ver proyecto
+    </a>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
+<!-- CALCULADORA DE FÍSICA -->
+<section class="calculadora" id="calculadora">
+  <div class="calculadora-content">
+
+    <h2>CALCULADORA DE FÍSICA</h2>
+    <p>
+      Programa desarrollado en C++ que permite realizar cálculos físicos
+      aplicando fórmulas fundamentales.
+    </p>
+
+    <div class="calc-box">
+
+      <div class="calc-info">
+        <h3>¿Qué hace este programa?</h3>
+        <p>
+          Esta calculadora permite resolver operaciones relacionadas con física,
+          aplicando lógica de programación estructurada.
+        </p>
+
+        <ul>
+          <li>Cálculo de variables físicas</li>
+          <li>Uso de estructuras condicionales</li>
+          <li>Entrada de datos por el usuario</li>
+          <li>Procesamiento matemático</li>
+        </ul>
+
+        <a href="files/calculadora.cpp" download class="btn-download">
+          Descargar archivo (.cpp)
+        </a>
+      </div>
+
+      <div class="calc-code">
+<pre><code>
+// Calculadora de Física en C++
+#include &lt;iostream&gt;
+using namespace std;
+
+int main() {
+    int opcion;
+    float resultado;
+
+    cout << "CALCULADORA DE FISICA\n";
+    cout << "1. Velocidad\n2. Fuerza\n3. Trabajo\n";
+    cin >> opcion;
+
+    if(opcion == 1){
+        float d, t;
+        cout << "Distancia y tiempo: ";
+        cin >> d >> t;
+        resultado = d/t;
+    }
+
+    cout << "Resultado: " << resultado;
+    return 0;
+}
+</code></pre>
+      </div>
+
+    </div>
+
+  </div>
+</section>
